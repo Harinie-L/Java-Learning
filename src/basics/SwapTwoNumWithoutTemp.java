@@ -1,0 +1,16 @@
+package basics;
+import java.util.Scanner;
+public class SwapTwoNumWithoutTemp{
+	public static void main (String[] args){
+		Scanner scan = new Scanner (System.in);
+	    System.out.print("Enter a value of A: ");
+	    int num1 = scan.nextInt();
+	    System.out.print("Enter a value of B: ");
+	    int num2 = scan.nextInt();
+	    num1 = num1 + num2;
+	    num2 = num1 - num2;
+	    num1 = num1 - num2;
+	    System.out.println("The Value of A is: "+num1);
+	    System.out.println("The Value of B is: " +num2);
+	}
+}
